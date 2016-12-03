@@ -77,13 +77,22 @@ public class PS5 extends Electrodomestico{
     public void derecha()
     {
         // Jose crea mover derecha
-        //if(derecha==){
-            
-        //}
+       if(derecha != true){
+           derecha = true;
+           System.out.println("Te mueves a la derecha");
+       }else{
+           derecha = false;
+       }
     }
     public void izquierda()
     {
-        
+        // Jose crea mover derecha
+        if(derecha != true){
+           derecha = true;
+           System.out.println("Te mueves a la izquierda");
+       }else{
+           derecha = false;
+       }
     }
     public void patadaAlta()
     {

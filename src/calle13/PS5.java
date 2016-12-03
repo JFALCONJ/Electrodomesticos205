@@ -62,7 +62,7 @@ public class PS5 extends Electrodomestico{
                 System.out.println("Has elegido UFC");
             break;
             default:
-                System.out.println("Eres un debilucho no has elegido bien.");
+                System.out.println("¡No eres digno!, no has elegido con sabiduria.");
         }
     }
     public void saltar()
@@ -77,9 +77,9 @@ public class PS5 extends Electrodomestico{
     public void derecha()
     {
         // Jose crea mover derecha
-        if(derecha==){
+        //if(derecha==){
             
-        }
+        //}
     }
     public void izquierda()
     {

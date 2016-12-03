@@ -4,19 +4,19 @@
  * and open the template in the editor.
  */
 package calle13;
-
+import java.util.Scanner;
 /**
  *
  * @author BRYAN BUITRAGO
  */
 public class PS5 extends Electrodomestico{
-    
+    Scanner s = new Scanner(System.in);
     double alto, ancho;
     String color;
     String leerjuego;
     boolean encender;
     boolean abrirbandeja;
-    boolean subir, bajar, izquierda, derecha;
+    boolean subir, bajar, izquierda, derecha=false;
     boolean botonX, botonCuadrado, botonTriangulo, botonCirculo;
     boolean start, selec;
     boolean prenderConsola;
@@ -38,7 +38,32 @@ public class PS5 extends Electrodomestico{
     }
     public void seleccionJuego()
     {
-        
+        //Cliente debe selecionar diferentes tipos de juegos de lucha.
+        int sl;
+        do{
+            System.out.println("1. Mortal Kombat X");
+            System.out.println("2. Strret Fighter IV");
+            System.out.println("3. The king of Figther");
+            System.out.println("4. UFC");
+            sl = s.nextInt();
+            }
+        while(sl>4);
+        switch(sl){
+            case 1:
+                System.out.println("Has elegido Mortal Kombat X");
+            break;
+            case 2:
+                System.out.println("Has elegido Strret Fighter IV");
+            break;
+            case 3:
+                System.out.println("Has elegido The king of Figther");
+            break;
+            case 4:
+                System.out.println("Has elegido UFC");
+            break;
+            default:
+                System.out.println("Eres un debilucho no has elegido bien.");
+        }
     }
     public void saltar()
     {
@@ -51,7 +76,10 @@ public class PS5 extends Electrodomestico{
     }
     public void derecha()
     {
-        
+        // Jose crea mover derecha
+        if(derecha==){
+            
+        }
     }
     public void izquierda()
     {
